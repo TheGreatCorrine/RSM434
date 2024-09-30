@@ -35,6 +35,11 @@ def main():
             resp = s.post('http://localhost:9999/v1/orders', params = {'ticker': 'RY', 'type': 'LIMIT', 'quantity': 500, 'price': best_bid_price_CNR, 'action': 'BUY'})
             resp = s.post('http://localhost:9999/v1/orders', params = {'ticker': 'RY', 'type': 'LIMIT', 'quantity': 500, 'price': best_ask_price_CNR, 'action': 'SELL'})
         
+        # If position is positive:
+            # sell market until net 0
+        # If position is Negative
+            # buy market until net 0
+
         resp.json()
         order_id = resp.json()['order_id']
         
