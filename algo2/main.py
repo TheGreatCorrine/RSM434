@@ -1,4 +1,4 @@
-from ritapi import get_bid_ask, get_news, get_open_orders, get_order_status, get_position, get_tick, get_time_sales
+from ritapi import get_bid_ask, get_news, get_open_orders, get_order_status, get_position, get_tick, get_time_sales, get_position_ticker
 import requests
 from time import sleep
 
