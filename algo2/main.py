@@ -46,8 +46,9 @@ def get_bid_ask(ticker):
   
         return best_bid_price, best_ask_price
 
-# def dynamic_quantity():
+def dynamic_quantity():
     """This function returns a Boolean. If all bid/ask orders can be filled, it returns True"""
+    pass
 
 
 def get_position():
